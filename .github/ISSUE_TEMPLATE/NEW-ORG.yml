@@ -1,0 +1,32 @@
+name: Add new community
+description: Adding a new Atlanta data community
+title: "[New Org]: "
+assignees:
+  - bbrewington
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing! (also, if you prefer you can just fork + PR to add a new one)
+  - type: input
+    id: community-name
+    attributes:
+      label: Community Name
+      description: Name of the community
+      placeholder: e.g. Atlanta dbt Meetup
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Community Description
+      description: Description of the community (if it's a Meetup, ok to copy+paste description from there) - recommend including brief description of purpose of the community, and parent organization info if applicable
+    validations:
+      required: false
+  - type: textarea
+    id: links
+    attributes:
+      label: Link(s)
+      description: Community link(s) - include Meetup / Slack / Discord / etc.  Ok to include more than one
+    validations:
+      required: false
